@@ -34,8 +34,6 @@
     "typescript": "^4.3.2"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown",
-    "*.ts": "eslint --quiet --fix",
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
   }
