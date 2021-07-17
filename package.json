@@ -8,7 +8,7 @@
     "watch": "nodemon index.ts",
     "build": "tsc",
     "test": "jest",
-    "prepare": "husky install"
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "keywords": [],
   "author": "",
