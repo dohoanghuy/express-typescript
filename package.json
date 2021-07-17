@@ -8,8 +8,7 @@
     "watch": "nodemon index.ts",
     "build": "tsc",
     "test": "jest",
-    "prepare": "husky install",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +33,7 @@
     "typescript": "^4.3.2"
   },
   "lint-staged": {
+    "*.ts": "eslint --cache --fix",
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
   }

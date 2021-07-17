@@ -6,7 +6,12 @@ const PORT = 3000;
 app.get("/", (req, res) => res.send("Express + TypeScript Server"));
 
 app.get("/add", (req: Request, res: Response) => {
+  const foo = "";
   res.send("add result");
+});
+
+app.get("subtract", (req: Request, res: Response) => {
+  res.send("subtract result");
 });
 
 app.listen(PORT, () => {
