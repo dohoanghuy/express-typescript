@@ -8,7 +8,8 @@
     "watch": "nodemon index.ts",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +35,7 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
+    "*.ts": "eslint --cache --fix",
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
   }
